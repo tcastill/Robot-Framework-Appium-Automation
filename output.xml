@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.4 on win32)" generated="2024-04-23T23:47:03.762690" rpa="false" schemaversion="5">
+<suite id="s1" name="RobotFramework" source="C:\Users\jarvis2\Desktop\RobotFramework">
+<suite id="s1-s1" name="Tests" source="C:\Users\jarvis2\Desktop\RobotFramework\Tests">
+<suite id="s1-s1-s1" name="Open Temu Application" source="C:\Users\jarvis2\Desktop\RobotFramework\Tests\Open_Temu_Application.robot">
+<test id="s1-s1-s1-t1" name="Open_Application" line="5">
+<kw name="Open Application">
+<msg time="2024-04-23T23:47:04.088691" level="FAIL">No keyword with name 'Open Application' found.</msg>
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=FA7961A01447</arg>
+<arg>appPackage=com.einnovation.temu</arg>
+<arg>appActivity=com.baogong.app_login.LoginActivity</arg>
+<arg>automationName=Uiautomator2</arg>
+<status status="FAIL" start="2024-04-23T23:47:04.088691" elapsed="0.000996">No keyword with name 'Open Application' found.</status>
+</kw>
+<status status="FAIL" start="2024-04-23T23:47:04.087689" elapsed="0.015998">No keyword with name 'Open Application' found.</status>
+</test>
+<status status="FAIL" start="2024-04-23T23:47:03.806688" elapsed="0.299015"/>
+</suite>
+<status status="FAIL" start="2024-04-23T23:47:03.804689" elapsed="0.303014"/>
+</suite>
+<status status="FAIL" start="2024-04-23T23:47:03.765689" elapsed="0.342999"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="RobotFramework">RobotFramework</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Tests">RobotFramework.Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Open Temu Application">RobotFramework.Tests.Open Temu Application</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-04-23T23:47:03.751687" level="ERROR">Error in file 'C:\Users\jarvis2\Desktop\RobotFramework\Demo\UITest.robot' on line 8: Creating keyword '' failed: User keyword name cannot be empty.</msg>
+<msg time="2024-04-23T23:47:04.085688" level="ERROR">Error in file 'C:\Users\jarvis2\Desktop\RobotFramework\Tests\Open_Temu_Application.robot' on line 2: Importing library 'AppiumLibrary' failed: ModuleNotFoundError: No module named 'appium.webdriver.common.touch_action'
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\AppiumLibrary\__init__.py", line 4, in &lt;module&gt;
+    from AppiumLibrary.keywords import *
+  File "C:\Python311\Lib\site-packages\AppiumLibrary\keywords\__init__.py", line 9, in &lt;module&gt;
+    from ._touch import _TouchKeywords
+  File "C:\Python311\Lib\site-packages\AppiumLibrary\keywords\_touch.py", line 3, in &lt;module&gt;
+    from appium.webdriver.common.touch_action import TouchAction
+PYTHONPATH:
+  C:\Users\jarvis2\Desktop\RobotFramework
+  C:\Users\jarvis2\Desktop\RobotFramework
+  C:\Python311\python311.zip
+  C:\Python311\DLLs
+  C:\Python311\Lib
+  C:\Python311
+  C:\Python311\Lib\site-packages</msg>
+</errors>
+</robot>

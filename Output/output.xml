@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.4 on win32)" generated="2024-04-24T08:46:12.336485" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\jarvis2\Desktop\RobotFramework\Tests">
+<suite id="s1-s1" name="Open Temu Application" source="C:\Users\jarvis2\Desktop\RobotFramework\Tests\Open_Temu_Application.robot">
+<test id="s1-s1-t1" name="Open_Application" line="5">
+<kw name="Open Application" owner="AppiumLibrary">
+<msg time="2024-04-24T08:46:12.888484" level="TRACE">Arguments: [ 'http://localhost:4723/wd/hub' | 'appium:FA7961A01447' | platformName='Android' | deviceName='FA7961A01447' | appPackage='com.android.wallpaper.livepicker' | appActivity='com.android.wallpaper.livepicker.LiveWallpaperActivity' | automationName='UiAutomator2' ]</msg>
+<msg time="2024-04-24T08:46:12.889485" level="DEBUG">POST http://localhost:4723/wd/hub/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'platformName': 'Android', 'appium:deviceName': 'FA7961A01447', 'appium:appPackage': 'com.android.wallpaper.livepicker', 'appium:appActivity': 'com.android.wallpaper.livepicker.LiveWallpaperActivity', 'appium:automationName': 'UiAutomator2'}}}</msg>
+<msg time="2024-04-24T08:46:12.946486" level="DEBUG">Starting new HTTP connection (1): localhost:4723</msg>
+<msg time="2024-04-24T08:46:22.352392" level="DEBUG">http://localhost:4723 "POST /wd/hub/session HTTP/1.1" 200 0</msg>
+<msg time="2024-04-24T08:46:22.352392" level="DEBUG">Remote response: status=200 | data={"value":{"capabilities":{"platformName":"Android","deviceName":"FA7961A01447","appPackage":"com.android.wallpaper.livepicker","appActivity":"com.android.wallpaper.livepicker.LiveWallpaperActivity","automationName":"UiAutomator2","platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","deviceName":"FA7961A01447","appPackage":"com.android.wallpaper.livepicker","appActivity":"com.android.wallpaper.livepicker.LiveWallpaperActivity","automationName":"UiAutomator2"},"deviceUDID":"FA7961A01447","pixelRatio":"2.625","statBarHeight":63,"viewportRect":{"left":0,"top":63,"width":1080,"height":1857},"deviceApiLevel":30,"platformVersion":"11","deviceManufacturer":"Google","deviceModel":"Pixel 2","deviceScreenSize":"1080x1920","deviceScreenDensity":420},"sessionId":"7f18c366-36d5-46cc-aa80-c23007a25971"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '977', 'ETag': 'W/"3d1-OYvoDdJZK/miOiERmCtbkQ+0zPk"', 'Date': 'Wed, 24 Apr 2024 15:46:22 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=600'})</msg>
+<msg time="2024-04-24T08:46:22.352392" level="DEBUG">Finished Request</msg>
+<msg time="2024-04-24T08:46:22.354393" level="DEBUG">Opened application with session id 7f18c366-36d5-46cc-aa80-c23007a25971</msg>
+<msg time="2024-04-24T08:46:22.354393" level="TRACE">Return: 1</msg>
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>appium:FA7961A01447</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=FA7961A01447</arg>
+<arg>appPackage=com.android.wallpaper.livepicker</arg>
+<arg>appActivity=com.android.wallpaper.livepicker.LiveWallpaperActivity</arg>
+<arg>automationName=UiAutomator2</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2024-04-24T08:46:12.888484" elapsed="9.465909"/>
+</kw>
+<status status="PASS" start="2024-04-24T08:46:12.882485" elapsed="9.472908"/>
+</test>
+<test id="s1-s1-t2" name="Close_Application" line="8">
+<kw name="Close All Applications" owner="AppiumLibrary">
+<msg time="2024-04-24T08:46:22.357392" level="TRACE">Arguments: [  ]</msg>
+<msg time="2024-04-24T08:46:22.358392" level="DEBUG">Closing all applications</msg>
+<msg time="2024-04-24T08:46:22.358392" level="DEBUG">DELETE http://localhost:4723/wd/hub/session/7f18c366-36d5-46cc-aa80-c23007a25971 {}</msg>
+<msg time="2024-04-24T08:46:22.896396" level="DEBUG">http://localhost:4723 "DELETE /wd/hub/session/7f18c366-36d5-46cc-aa80-c23007a25971 HTTP/1.1" 200 0</msg>
+<msg time="2024-04-24T08:46:22.897397" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Wed, 24 Apr 2024 15:46:22 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=600'})</msg>
+<msg time="2024-04-24T08:46:22.897397" level="DEBUG">Finished Request</msg>
+<msg time="2024-04-24T08:46:22.897397" level="TRACE">Return: None</msg>
+<doc>Closes all open applications.</doc>
+<status status="PASS" start="2024-04-24T08:46:22.357392" elapsed="0.540005"/>
+</kw>
+<status status="PASS" start="2024-04-24T08:46:22.356395" elapsed="0.541999"/>
+</test>
+<status status="PASS" start="2024-04-24T08:46:12.388484" elapsed="10.511908"/>
+</suite>
+<status status="PASS" start="2024-04-24T08:46:12.338483" elapsed="10.562910"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="Open Temu Application">Tests.Open Temu Application</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
